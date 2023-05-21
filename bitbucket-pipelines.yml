@@ -7,6 +7,6 @@ pipelines:
         script:
           - pipe: microsoft/azure-static-web-apps-deploy:main
             variables:
-                APP_LOCATION: '/angular-15-client'
-                OUTPUT_LOCATION: '/angular-15-client/dist/angular-15-crud'
+                APP_LOCATION: '/'
+                OUTPUT_LOCATION: '/angular-15-client
                 API_TOKEN: '7386a45ae245497c5c358ac983d37872f7235da27ea3b4e29f5e7dda868ba5113-9d36d53b-074e-450f-9416-945f5d4b2a2f003234883'
