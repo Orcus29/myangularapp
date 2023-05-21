@@ -1,11 +1,11 @@
 pipelines:
   branches:
-   main:
+   master:
     - step: 
         name: Deploy to test
         deployment: test
         script:
-          - pipe: microsoft/azure-static-web-apps-deploy:master
+          - pipe: microsoft/azure-static-web-apps-deploy:main
             variables:
                 APP_LOCATION: '/angular-15-client'
                 OUTPUT_LOCATION: '/angular-15-client/dist/angular-15-crud'
